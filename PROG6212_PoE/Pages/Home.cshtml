@@ -1,0 +1,88 @@
+﻿@page
+@using PROG6212_PoE.Model;
+@{
+    Layout = "_Layout"; // Set the layout to null if you want this view to bypass the default layout
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules Web App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #343a40;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #dc3545;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Modules Web App</h1>
+        <p>Manage your modules with ease.</p>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Explore and manage your modules effortlessly.</p>
+            <a href="/Modules" class="cta-button">View Modules</a>
+        </div>
+
+        <div class="card">
+            <h2>Add New Module</h2>
+            <p>Quickly add a new module to your list.</p>
+            <a href="/AddModule" class="cta-button">Add Module</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Modules Web App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

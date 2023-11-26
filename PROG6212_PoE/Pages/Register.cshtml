@@ -1,0 +1,18 @@
+﻿@page
+@model PROG6212_PoE.Pages.RegisterModel
+@{
+    Layout = "_Login";
+}
+
+
+<div class="login-page">
+    <div class="form">        
+        <form class="login-form" method="post">
+            <h2>Register</h2>
+            <input type="text" placeholder="username" name="txtName" />
+            <input type="password" placeholder="password" name="txtPassword" />
+            <button type="submit">Register</button>
+            <p class="message">Already registered? <a href="/Login">Login</a></p>
+        </form>
+    </div>
+</div>

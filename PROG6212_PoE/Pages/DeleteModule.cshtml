@@ -1,0 +1,10 @@
+﻿@page
+@using PROG6212_PoE.Model;
+@{
+
+    string code = Request.Query["code"];
+    CustomLibrary md = new CustomLibrary();
+    md.delete(code);
+
+    Response.Redirect("/Modules");
+}

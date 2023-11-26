@@ -1,0 +1,44 @@
+﻿@page
+@model PROG6212_PoE.Pages.ModulesModel
+@{
+    Layout = "_Layout";
+}
+
+<h2>Modules</h2>
+
+<a class="btn btn-primary" href="/AddModule">New</a>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Code</td>
+            <td>Name</td>
+            <td>Credits</td>
+            <td>Number of Weeks</td>
+            <td>Hours Per Week</td>
+            <td>Date</td>
+            <td>Self Study Hours</td>
+            <td>Hours Spent</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var md in Model.m)
+        {
+            <tr>
+                <td>@md.moduleCode</td>
+                <td>@md.moduleName</td>
+                <td>@md.moduleCredits</td>
+                <td>@md.weeks</td>
+                <td>@md.hrsWeekly</td>
+                <td>@md.date</td>
+                <td>@md.selfstudyHours()</td>
+                <td>@md.hoursLeftOnModule()</td>
+                <td>
+                    <a class="btn btn-primary" href="/EditModule?Code=@md.moduleCode">Edit</a>
+                    <a class="btn btn-danger" href="/DeleteModule?Code=@md.moduleCode">Delete</a>
+                    <a class="btn btn-danger" href="/ModulesChart?Code=@md.moduleCode">Graph</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

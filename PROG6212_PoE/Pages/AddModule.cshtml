@@ -1,0 +1,43 @@
+﻿@page
+@model PROG6212_PoE.Pages.AddModuleModel
+@{
+    Layout = "_Layout";
+}
+
+<h2>Add New Module</h2>
+<br />
+<form class="row g-3" method="post">
+    <div class="col-md-6">
+        <label for="inputCode" class="form-label">Code</label>
+        <input type="text" class="form-control" id="inputCode" name="txtCode">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" name="txtName">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputsCredits" class="form-label">Credits</label>
+        <input type="text" class="form-control" id="inputCredits" name="txtCredits">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputNumOfWeeks" class="form-label">Number of weeks</label>
+        <input type="number" class="form-control" id="inputNumOfWeeks" name="txtNumOfWeeks">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputHoursPerWeek" class="form-label">Hours per weeks</label>
+        <input type="number" class="form-control" id="inputHoursPerWeek" name="txtHoursPerWeek">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputDate" class="form-label">Date</label>
+        <input type="date" class="form-control" id="inputDate" name="txtDate">
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Module</button>
+    </div>
+</form>

@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #FF0000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF0000;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+body {
+    background-color: #f8f9fa; /* Set the background color for the entire page */
+}
+
+h2 {
+    color: #dc3545; /* Set the text color for the heading */
+}
+
+form {
+    background-color: #dc3545; /* Set the background color for the form */
+    padding: 20px; /* Add some padding for better visibility */
+    border-radius: 10px; /* Add rounded corners to the form */
+    color: #fff; /* Set the text color for the form */
+}
+
+label {
+    color: #fff; /* Set the text color for labels */
+}
+
+.form-control {
+    background-color: #fff; /* Set the background color for form controls */
+    color: #495057; /* Set the text color for form controls */
+}
+
+.btn-primary {
+    background-color: #dc3545; /* Set the background color for the submit button */
+    color: #fff; /* Set the text color for the submit button */
+}
